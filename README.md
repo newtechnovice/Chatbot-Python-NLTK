@@ -25,8 +25,8 @@ pip install nltk
 5. Predict the response
 
 ### Tasks
-- [ ] Determine the chatbot's goals and identify *all* required features and tasks
-- [ ] Design dialogue flows 
+- [X] Determine the chatbot's goals and identify *all* required features and tasks
+- [X] Design dialogue flows 
 - [ ] Create a data file in JSON format 
 
 *will add more to this later* 
