@@ -16,6 +16,27 @@ A chatbot is a computer program designed to simulate human conversation between 
 pip install nltk
 ```
    Read [here](https://www.nltk.org/) for the NLTK documentation.
+   
+- **Keras**
+
+     Keras is an open-source software library that provides a Python interface for artificial neural networks. Keras acts as an interface for the TensorFlow library. To install:
+     
+```
+pip install keras
+```
+
+  To learn more about Keras click [here](https://keras.io/).
+
+- **TensorFlow**
+
+     An end-to-end open source machine learning platform for everyone To install:
+     
+```
+pip install tensorflow
+```
+
+Click here for [TensorFlow guide](https://www.tensorflow.org/guide).
+
 
 ## Steps to Create a Chatbot
 1. Import and load the data file
@@ -28,7 +49,11 @@ pip install nltk
 - [X] Determine the chatbot's goals and identify *all* required features and tasks
 - [X] Design dialogue flows 
 - [ ] Create a data file in JSON format 
+- [ ] Train data
+- [ ] Test data
+- [ ] Build model
+- [ ] Create Graphical User Interface
 
 *will add more to this later* 
 
-*Project status as of December 1, 2020: Ongoing*
+*Project status as of January 19, 2021: Ongoing*
