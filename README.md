@@ -1,6 +1,6 @@
 # Chatbot-Python-NLTK
 
-This is a simple chatbot built with Python using NLTK and Keras following a tutorial from [Data Flair](https://data-flair.training/blogs/python-chatbot-project/).
+This is a simple chatbot built with Python using NLTK and Keras following a tutorial from [Data Flair](https://data-flair.training/blogs/python-chatbot-project/) for school project purposes. 
 
 A chatbot is a computer program designed to simulate human conversation between a human and a machine; it benefits agents who answers repetitive questions all day and delivers consistent information thus, improving workflow and productivity. 
 
