@@ -1,0 +1,57 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#top-bar{
+    background-color: #093A1D;
+    color: white;
+    padding: 1% 5%;
+    padding-top: 8px;
+    padding-bottom: 0px;
+}
+
+#title{
+    background-color: white; 
+}
+
+.container-fluid{
+    padding: 3% 5% 1%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    color: #2c061f !important;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#slider{
+   width: auto;
+   height: auto;
+}
+
+.slider-image{
+    width: 100%;
+    margin-left: 0rem;
+}
+
+#apply{
+    padding: 1% 5%;
+}
+
+.admission-link{
+    color: #00af91;
+}
+
+.btn-success{
+    background-color: #093A1D;
+    border-color: #093A1D;
+}
+
+
+
