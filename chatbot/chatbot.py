@@ -31,7 +31,7 @@ import random
 words = []
 classes = []
 documents = []
-ignore_words = ['?', '!']
+ignore_words = ['?', '!', ',', '.']
 data_file = open('intents.json').read()
 intents = json.loads(data_file)
 
@@ -100,14 +100,14 @@ for doc in documents:
     pattern_words = [lemmatizer.lemmatize(word.lower()) for word in pattern_words]
     # create our bag of words array with 1, if word match found in current pattern
     
-for w in words:
-    bag.append(1) if w in pattern_words else bag.append(0)
+    for w in words:
+        bag.append(1) if w in pattern_words else bag.append(0)
 
-    # output is a '0' for each tag and '1' for current tag (for each pattern)
-    output_row = list(output_empty)
-    output_row[classes.index(doc[1])] = 1
+        # output is a '0' for each tag and '1' for current tag (for each pattern)
+        output_row = list(output_empty)
+        output_row[classes.index(doc[1])] = 1
 
-    training.append([bag, output_row])
+        training.append([bag, output_row])
 
 # shuffle our features and turn into np.array
 random.shuffle(training)
