@@ -48,12 +48,12 @@ Click here for [TensorFlow guide](https://www.tensorflow.org/guide).
 ### Tasks
 - [X] Determine the chatbot's goals and identify *all* required features and tasks
 - [X] Design dialogue flows 
-- [ ] Create a data file in JSON format 
-- [ ] Train data
-- [ ] Test data
-- [ ] Build model
+- [X] Create a data file in JSON format 
+- [X] Train data
+- [X] Test data
+- [X] Build model
 - [ ] Create Graphical User Interface
 
 *will add more to this later* 
 
-*Project status as of January 19, 2021: Ongoing*
+*Project status as of January 27, 2021: Ongoing*
