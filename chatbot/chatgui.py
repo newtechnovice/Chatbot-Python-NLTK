@@ -46,7 +46,7 @@ def bow(sentence, words, show_details=True):
     return (np.array(bag))
 
 
-def predict_class(sentence, model):
+def predict_class(sentence):
     # filter out predictions below a threshold
     p = bow(sentence, words, show_details=False)
     res = model.predict(np.array([p]))[0]
@@ -73,27 +73,23 @@ def getResponse(ints, intents_json):
             break
     return result
 
-def chatbot_response(text):
-    ints = predict_class(text, model)
-    res = getResponse(ints, intents)
-    return res
-
 def send():
-    msg = EntryBox.get("1.0",'end-1c')
+    msg = EntryBox.get("1.0",'end-1c').strip()
     EntryBox.delete("0.0",END)
     if msg != '':
         ChatLog.config(state=NORMAL)
         ChatLog.insert(END, "You: " + msg + '\n\n')
         ChatLog.config(foreground="#442265", font=("Verdana", 12 ))
-
-        res = chatbot_response(msg)
+        
+        ints = predict_class(msg)
+        res = getResponse(ints, intents)
         ChatLog.insert(END, "Bot: " + res + '\n\n')
 
         ChatLog.config(state=DISABLED)
         ChatLog.yview(END)
 
 base = Tk()
-base.title("Hello")
+base.title("Support Chatbot")
 base.geometry("400x500")
 base.resizable(width=FALSE, height=FALSE)
 
