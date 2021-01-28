@@ -71,6 +71,9 @@ def getResponse(ints, intents_json):
         if (i['tag'] == tag):
             result = random.choice(i['responses'])
             break
+        elif(i['tag'] != tag):
+            result = "Sorry, we do not have an answer yet. For more inquiries, you may contact: "
+            break
     return result
 
 def send():
