@@ -96,29 +96,39 @@ base.title("Support Chatbot")
 base.geometry("400x500")
 base.resizable(width=FALSE, height=FALSE)
 
-#Create Chat window
-ChatLog = Text(base, bd=0, bg="white", height="8", width="50", font="Arial", wrap="WORD")
+#Favicon
+favicon = PhotoImage(file = 'about-logo.png')
+base.iconphoto(False,favicon)
 
+#Logo Header
+img = PhotoImage(file = 'dlsud-logo.png')
+Logo = Label(base, image = img, bg="white")
+Logo.place(x=6,y=6, height=77, width=371)
+
+#Chat window
+ChatLog = Text(base, bd=0, bg="white", height="8", width="50", font=("Arial", 12), wrap="WORD")
 ChatLog.config(state=DISABLED)
 
 #Bind scrollbar to Chat window
-scrollbar = Scrollbar(base, command=ChatLog.yview, cursor="heart")
+scrollbar = Scrollbar(base, command=ChatLog.yview) #cursor="heart"
 ChatLog['yscrollcommand'] = scrollbar.set
 
-#Create Button to send message
-SendButton = Button(base, font=("Verdana",12,'bold'), text="Send", width="12", height=5,
-                    bd=0, bg="#32de97", activebackground="#3c9d9b",fg='#ffffff',
+#Button to send message
+SendButton = Button(base, font=("Verdana",12), text="Send", width="12", height=5,
+                    bd=0, bg="#799351", activebackground="#799351",fg='#ffffff',
                     command= send )
 
-#Create the box to enter message
-EntryBox = Text(base, bd=0, bg="white",width="29", height="5", font="Arial", wrap="WORD")
+#the box to enter message
+EntryBox = Text(base, bd=0, bg="white",width="29", height="5", font=("Arial", 12), wrap="WORD")
 #EntryBox.bind("<Return>", send)
 
 
 #Place all components on the screen
-scrollbar.place(x=376,y=6, height=386)
-ChatLog.place(x=6,y=6, height=386, width=370)
-EntryBox.place(x=128, y=401, height=90, width=265)
-SendButton.place(x=6, y=401, height=90)
+Logo.place(x=6,y=6, height=77, width=371)
+scrollbar.place(x=376,y=50, height=386)
+ChatLog.place(x=6,y=75, height=360, width=370)
+EntryBox.place(x=6, y=440, height=50, width=265)
+SendButton.place(x=280, y=440, height=50)
+
 
 base.mainloop()
