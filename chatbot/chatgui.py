@@ -43,6 +43,8 @@ def bow(sentence, words, show_details=True):
                 bag[i] = 1
                 if show_details:
                     print("found in bag: %s" % w)
+            elif w != s:
+                bag[i] = 0
     return (np.array(bag))
 
 
@@ -70,9 +72,6 @@ def getResponse(ints, intents_json):
     for i in list_of_intents:
         if (i['tag'] == tag):
             result = random.choice(i['responses'])
-            break
-        elif(i['tag'] != tag):
-            result = "Sorry, we do not have an answer yet. For more inquiries, you may contact: "
             break
     return result
 
