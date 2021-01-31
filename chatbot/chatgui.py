@@ -43,8 +43,6 @@ def bow(sentence, words, show_details=True):
                 bag[i] = 1
                 if show_details:
                     print("found in bag: %s" % w)
-            elif w != s:
-                bag[i] = 0
     return (np.array(bag))
 
 
