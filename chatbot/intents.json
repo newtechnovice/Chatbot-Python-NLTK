@@ -54,5 +54,9 @@
         "patterns": ["unable to access online registration"],
         "responses": ["These holds prevent you from enrolling in courses or viewing your grades but not from logging in. There are several reasons for your holds -- each with a different way or office to address or clear it. You must resolve your hold with the office that initiated it. For example, if you have a balance from your tuition and other fees, you will need to pay it and clear your account from the Student Accounts Section to have this hold removed."]
     }
+    {"tag":"noanswer",
+        "patterns": [],
+        "responses": ["Sorry, it seems we don't have any information for that yet."]
+    }
 ]
 }
