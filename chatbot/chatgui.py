@@ -104,7 +104,7 @@ Logo.place(x=6,y=6, height=77, width=371)
 
 #Chat window
 ChatLog = Text(base, bd=0, bg="white", height="8", width="50", font=("Arial", 12), wrap="WORD")
-ChatLog.config(state=DISABLED)
+ChatLog.config(state=DISABLED, wrap=WORD)
 
 #Bind scrollbar to Chat window
 scrollbar = Scrollbar(base, command=ChatLog.yview) #cursor="heart"
