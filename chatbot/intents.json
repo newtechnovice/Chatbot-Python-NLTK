@@ -2,67 +2,79 @@
      {"tag": "greeting",
         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "ni hao", "konnichiwa", "kamusta", "hola soy dora!"],
         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
-        "context_set": ""
+        "context": [""]
        },
 
     {"tag": "goodbye",
         "patterns": ["Bye", "See you later", "Goodbye"],
         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        "context": [""]
        },
 
     {"tag": "thanks",
         "patterns": ["Thanks", "Thank you", "That's helpful"],
         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        "context": [""]
        },
 
     {"tag": "accounting",
         "patterns": ["Accounting's email", "How to contact accounting?"],
         "responses": ["Voila! You may contact the Accounting's office through assessment@dlsud.edu.ph"]
+        "context": [""]
     },
 
     {"tag":"account",
         "patterns": ["Payment due date", "When is the due date for payment?", "due dates for tuition fee?"],
         "responses": ["Your due tuition must be paid before the finals week, which starts on Feb. 1, 2021."]
+        "context": [""]
     },
 
     {"tag": "acc",
         "patterns": ["What is my remaining tuition?", "What is my remaining balance?"],
-        "responses": ["Boohoo, I don't know yet ho. You may contact the accounting's office through assessment@dlsud.edu.ph or visit your DLSU-D Portal."]
+        "responses": ["I don't know yet. You may contact the accounting's office through assessment@dlsud.edu.ph or visit your DLSU-D Portal."]
+        "context": [""]
     },
 
     {"tag":"sso",
         "patterns": ["Contact info", "how to contact sso"],
         "responses": ["Tada! You may email cas_scholarship@dlsud.edu.ph or you may call at Cavite +63 (46) 8481-1900 local 3126; Manila: +63 (2) 8779-5180."]
+        "context": [""]
     },
 
     {"tag":"ss",
         "patterns": ["scholarship requirement", "how to be a scholar?"],
         "responses": ["There are a total of 12 requirements to be met. You may check them out at: www.dlsud.edu.ph/scholarship to view them in full details."]
+        "context": [""]
     },
 
     {"tag":"s",
         "patterns": ["application process", "how to apply for scholarship?", "What is the application process for scholarship?"],
         "responses": ["Please click the link for the scholarship guidelines and application procedures: www.dlsud.edu.ph/admission/scholarship/opening.html"]
+        "context": [""]
     },
 
     {"tag":"registrar",
         "patterns": ["What is the contact number of registrar?", "how to contact registrar"],
         "responses": ["You may contact these people: for enrollment, avalvaran@dlsud.edu.ph; for academic credentials, ouronlinerequest@dlsud.edu.ph; for student grades, kmmalonzo@dlsud.edu.ph"]
+        "context": [""]
     },
 
     {"tag":"registra",
         "patterns": ["when can i shift", "I'm a freshmen, can I shift to another course?"],
         "responses": ["Freshmen are allowed to shift by the end of the First Semester. Upperclassmen may shift at the end of the current semester when grades become available."]
+        "context": [""]
     },
 
     {"tag":"registr",
         "patterns": ["I am unable to access online registration, what can I do?","I can't access online registration"],
         "responses": ["These holds prevent you from enrolling in courses or viewing your grades but not from logging in. There are several reasons for your holds -- each with a different way or office to address or clear it. You must resolve your hold with the office that initiated it. For example, if you have a balance from your tuition and other fees, you will need to pay it and clear your account from the Student Accounts Section to have this hold removed."]
+        "context": [""]
     },
 
     {"tag":"noanswer",
         "patterns": [],
         "responses": ["Sorry, it seems we don't have any information for that yet."]
+        "context": [""]
     }
 ]
 }
