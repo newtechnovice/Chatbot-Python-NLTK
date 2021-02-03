@@ -63,5 +63,5 @@ python chatbot.py
 ```
 
 ```
-python chatbotgui.py
+python chatgui.py
 ```
