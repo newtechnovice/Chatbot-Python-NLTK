@@ -52,8 +52,16 @@ Click here for [TensorFlow guide](https://www.tensorflow.org/guide).
 - [X] Train data
 - [X] Test data
 - [X] Build model
-- [ ] Create Graphical User Interface
+- [X] Create Graphical User Interface
 
-*will add more to this later* 
 
-*Project status as of January 27, 2021: Ongoing*
+## How to Run 
+Run using the command prompt. Make sure to have NLTK, TensorFlow, and Keras installed in your device.
+
+```
+python chatbot.py
+```
+
+```
+python chatbotgui.py
+```
